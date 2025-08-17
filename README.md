@@ -1,5 +1,6 @@
 🏰 Knights of the Round Table Registration Form
-https://knight-7535563_1280.jpg
+![Vista previa del formulario](./knight-7535563_1280.jpg)
+
 An interactive medieval form to recruit loyal knights for King Arthur. Includes validation, visual effects, and a Camelot-inspired theme.
 
 
