@@ -1,18 +1,16 @@
 const boton = document.querySelector(".form__boton--glitter");
 const contenedor = document.getElementById("particles-container");
 
-boton.addEventListener("click", (e) => {
-  e.preventDefault(); // ⛔ Evita que el formulario se envíe o recargue la página
+//Uncomment the lines below if you want to see the effect of the button without having to fill in all the required lines.
+// boton.addEventListener("click", (e) => {
+//   e.preventDefault(); 
 
-  // ✨ Mostrar brillo
   boton.classList.add("brillar");
 
-  // 💫 Ocultar brillo después de 1.5 segundos
   setTimeout(() => {
     boton.classList.remove("brillar");
   }, 1500);
 
-  // 🎇 Crear partículas
   for (let i = 0; i < 20; i++) {
     const p = document.createElement("div");
     p.classList.add("particle");
@@ -26,7 +24,7 @@ p.style.top = `${rect.top + rect.height / 2 + window.scrollY}px`;
 
     contenedor.appendChild(p);
 
-    // ❌ Borrar después de la animación
     setTimeout(() => p.remove(), 800);
   }
-});
+//})
+;
